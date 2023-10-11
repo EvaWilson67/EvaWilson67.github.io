@@ -1,0 +1,17 @@
+body {
+background_color: Beige;
+font-family: "Lucida Console", "Courier New", monospace;
+}
+h1 {
+text-align: center;
+}
+assign {
+display: flex;
+padding: 10px;
+margin: 10px;
+background: [pick a color];
+}
+.assign img {
+width: 200px;
+padding: 10px;
+}
