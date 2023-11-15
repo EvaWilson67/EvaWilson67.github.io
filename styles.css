@@ -1,9 +1,14 @@
 body {
   background-color: #E0E0BA;
   font-family: Lucida Console, Courier New, monospace;
+  display: flex;
+  flex-wrap: wrap;
 }
 h1 {
   text-align: center;
+}
+h1:hover{
+  color: #6BB0E1;
 }
 h2 {
   color: #6BB0E1;
@@ -17,11 +22,15 @@ a:hover {
  color: #6BB0E1; /* pick the color you want */
 }
 
-assign {
+.assign {
   display: flex;
   padding: 10px;
   margin: 10px;
   background: White;
+  border-radius: 20px;
+  width: 20%;
+  box-shadow: 8px 8px brown;
+  display: block; /* instead of flex */
 }
 .assign img {
   width: 200px;
