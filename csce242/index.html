@@ -11,24 +11,36 @@ An html list - First bullet or number is a link to Assignment 1 page -->
 <html>
 
 <head>
+    <link rel="stylesheet" href="styles.css">
     <title>CSCE 242: Web Apps</title>
 </head>
 
 <body>
-    <h1>CSCE242</h1>
-    <h3> Eva Wilson</h3>
+    <div id="content">
+        <header>
+            <h1>CSCE 242</h1>
+            <h3>Eva Wilson</h3>
+            <p>Web Applications is a course designed to help students not only be able to create the front end of a
+                website with HTML and CSS, but also the backend of the website with javascript. Additionally, students
+                will learn to utilize node and server side JavaScript to store and retrieve data.</p>
+        </header>
 
-    <p>Web Applications is a course designed to help students not only be able to create the front end of a website with
-        HTML and CSS, but also the backend of the website with javascript. Additionally, students will learn to utilize
-        node and server side JavaScript to store and retrieve data, which will help future jobs.
-        from a serve</p>
+        <body>
+            <h2>Assignments</h2>
 
-    <h2>Assignments</h2>
-    <ul>
-        <li><a href="assignments/assignment01/index.html">Assignment 1</a></li>
-    </ul>
-</body>
+            <div id="main-nav">
+                <ul>
+                    <li><a href="assignments/assignment01/index.html">Assignment 1: Basic HTML</a></li>
+                    <li><a href="assignments/assignment02/index.html">Assignment 2: Basic CSS</a></li>
 
+                </ul>
+            </div>
+        </body>
+
+        <footer id="main-footer">
+            <p>&copy; EvaWilson</p>
+        </footer>
+    </div>
 
 
 </html>
