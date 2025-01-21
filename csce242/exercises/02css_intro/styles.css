@@ -1,0 +1,57 @@
+/*Structure*/
+
+body {
+  background:url(images/sky.jpg);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* # means it is an ID, you do it ONLY once */
+#content {
+  background: white;
+  width: 50%;
+
+  margin: auto; /* Center */
+  padding: 5px;
+  border: 1px solid darkblue;
+  border-radius: 5px;
+  box-shadow: 10px 10px lightblue;
+}
+
+/* . is for the class, we do it multiple times */
+
+header,
+footer {
+  background: darkblue;
+  padding: 5px;
+  color: white;
+}
+
+/* Navigation */
+#main-nav ul {
+  padding-left: 0; /*get's rid of the left padding*/
+}
+
+#main-nav li {
+  list-style-type: none; /*remove the bullets */
+  display: inline-block;
+}
+
+/*anchor tag */
+#main-nav a {
+  color: white;
+  text-decoration: none; /* remove underline */
+  border-bottom:1px solid transparent; /* prevents borders from moving the page*/
+}
+
+#main-nav a:hover {
+  color: crimson;
+  border-bottom:2px solid white;
+}
+
+/* Typography AKA fonts*/
+header h1 {
+  text-align: center;
+}
+footer p {
+  text-align: center;
+}
