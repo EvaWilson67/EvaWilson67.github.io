@@ -8,7 +8,7 @@ body {
 
 #content {
   background: #fc7643;
-  /* width: 75%; */
+  width: 75%;
   margin: auto; /* Center */
   padding: 5px;
   border-radius: 5px;
@@ -74,7 +74,7 @@ header h3 {
 }
 
 /* Larger Resolutions*/
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   #main-nav ul {
     display: flex;
   }
