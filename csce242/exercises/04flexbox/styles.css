@@ -1,0 +1,55 @@
+/* Structure */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-header {
+  background: blanchedalmond;
+}
+
+#main-content {
+  background: cornflowerblue;
+  padding: 5px;
+}
+#species section {
+  background: lightgreen;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* Main Nagivation */
+#main-nav ul {
+  padding-left: 0;
+}
+
+#main-nav li {
+  list-style-type: none;
+  padding: 5px;
+  background-color: aliceblue;
+  border-bottom: 1px solid gray;
+}
+
+#main-nav a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Typography */
+#main-header h1 {
+  text-align: center;
+}
+#main-content h2 {
+  color: white;
+}
+
+/* Larger Resolutions*/
+@media (min-width: 900px) {
+  #main-nav ul,
+  .flex-container {
+    display: flex;
+  }
+
+  #main-nav li {
+    flex: 1;
+  }
+}
