@@ -42,17 +42,20 @@ footer {
 }
 
 /* Navigation */
-#first-row ul, #second-row ul {
+#first-row ul,
+#second-row ul {
   padding-left: 0;
 }
 
-#first-row li, #second-row li {
+#first-row li,
+#second-row li {
   list-style-type: none; /*remove the bullets */
   display: inline-block;
 }
 
 /*anchor tag */
-#first-row a, #second-row a {
+#first-row a,
+#second-row a {
   color: white;
   text-decoration: transparent; /* remove underline */
   border: 2px solid transparent; /* prevents borders from moving the page*/
@@ -71,7 +74,6 @@ header h3 {
 
 /* Larger Resolutions*/
 @media (min-width: 600px) {
-
   .flex-container ul {
     display: flex;
   }
