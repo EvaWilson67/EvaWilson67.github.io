@@ -71,22 +71,6 @@ header h3 {
 
 /* Larger Resolutions*/
 @media (min-width: 600px) {
-  /* #first-row ul{
-    display: flex;
-  }
-
-  .colof3 {
-    box-sizing: border-box;
-  }
-
-  #first-row a:hover {
-    border-radius: 16px;
-    border: 2px solid #273248;
-  }
-
-  #first-row li {
-    flex: 2;
-  } */
 
   .flex-container ul {
     display: flex;
