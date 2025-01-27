@@ -41,6 +41,11 @@ footer {
   margin: auto;
 }
 
+.colof3 li{
+  font-size: 21px;
+  padding:10px;
+}
+
 /* Navigation */
 #first-row ul,
 #second-row ul {
@@ -78,16 +83,19 @@ header h3 {
     display: flex;
   }
 
-  .colof3 {
-    box-sizing: border-box;
+  .flex-container li {
+    flex: 2;
   }
+}
 
-  .flex-container a:hover {
-    border-radius: 16px;
-    border: 2px solid #273248;
+/* Larger Resolutions*/
+@media (max-width: 600px) {
+  .flex-container ul {
+    display: flex;
   }
 
   .flex-container li {
     flex: 2;
   }
 }
+
