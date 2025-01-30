@@ -1,0 +1,363 @@
+/* Structure */
+
+body {
+  font-family: Berlingske Sans, Arial, sans-serif;
+  font-weight: 500;
+  width: 100%;
+  margin: 0;
+}
+
+#main-header {
+  background: black;
+  /* margin:50px; */
+  /* padding-right: 200px; */
+}
+
+#header-content {
+  color: white;
+  margin: auto;
+  border: auto solid black;
+  width: 70%;
+}
+
+#main-information {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 17px;
+}
+
+.logo {
+  width: 70%;
+
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+/*ADJUST LATER****/
+#tools {
+  position: absolute;
+  top: 0;
+  right: 210px;
+  text-align: right;
+  /* padding-right: 230px; */
+
+}
+
+#search{
+  position: relative;
+  top: 20px;
+  right: -258px;
+}
+
+
+#search-bar{
+  padding:10px;
+  border:2px solid white;
+}
+
+.nav-links {
+  padding-right: 20px;
+  /* background-color:pink; */
+}
+
+.icons img{
+  padding-right:10px;
+}
+
+#college-background,
+footer {
+  background: #73000a;
+}
+#college-name,
+#main-footer {
+  background: #73000a;
+  color: white;
+
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+.vertical-link {
+  padding-right: 20px;
+}
+
+.section2 {
+  width: 96%;
+  margin-top: -20px;
+}
+
+.description {
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.social-media h4,
+h3 {
+  margin-bottom: 10px;
+}
+
+.icons p {
+  margin-top: 5px;
+  padding-right: 10px;
+}
+
+.more-links {
+  position: absolute;
+  right: 225px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.resources {
+  padding-right: 50px;
+  margin: 0;
+}
+
+.big-news img {
+  padding-right: 20px;
+}
+
+.big-news-text {
+  width: 70%;
+}
+
+
+#college-information{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 17px;
+}
+#college-info-back{
+  background-color: #ececec;
+}
+
+.more-links{
+  /* margin-top:0; */
+  padding-top:0;
+}
+
+/* FIX AND MAKE PRETTY */
+
+/* Main Nagivation */
+#tools ul {
+  padding-left: 5px;
+}
+
+.vertical-link ul,
+.resources ul {
+  padding-left: 0;
+}
+
+.nav-links li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 0.625rem;
+  padding-right: 5px;
+}
+
+.vertical-link li {
+  display: block;
+  list-style-type: none;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #c7c7c7;
+}
+.more-news li {
+  list-style-type: none;
+}
+
+.more-links li {
+  display: block;
+  display: inline-block;
+  list-style-type: none;
+  padding: 5px;
+}
+
+.footer-links li {
+  display: block;
+  list-style-type: none;
+}
+
+.nav-links a,
+.footer-links a {
+  text-decoration: none; /* remove the underlines */
+  color: white;
+}
+
+.links a,
+.vertical-link a {
+  text-decoration: none;
+  color: black;
+}
+
+#image-text a {
+  text-decoration: none;
+  color: #73000a;
+}
+
+.node a,
+.big-news a {
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.footer-links a:hover,
+.links a:hover {
+  background-color: #cc2e40;
+}
+
+.vertical-link a:hover {
+  color: white;
+}
+
+.more-links a:hover {
+  background-color: #73000a;
+  color: white;
+}
+
+/* Box Links */
+.node :hover,
+.big-news :hover {
+  background-color: #c7c7c7;
+}
+
+.more-news a {
+  color: #73000a;
+}
+
+.more-news a:hover {
+  color: white;
+  background-color: #73000a;
+}
+
+/* Typography */
+#tools {
+  font-size: 0.625rem;
+}
+#college-name h1 {
+  margin: 0px;
+}
+
+.college {
+  color: #73000a;
+}
+
+.vertical-link {
+  /* font-size: 2em; */
+  font-weight: 600;
+
+  /* background:pink; */
+}
+
+.section2 {
+  font-size: 1.25em;
+}
+
+.section2 h4,
+.section2 h3 {
+  color: #73000a;
+  margin-top: 0;
+}
+
+.section2 p {
+  color: black;
+}
+
+.right {
+  text-align: right;
+}
+
+.top{
+  padding-top:20px;
+}
+
+.resources h2 {
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.more-news {
+  font-size: 12px;
+}
+
+/* .node{
+  background-color:pink;
+} */
+
+/* Small Screens*/
+@media only screen and (max-width: 767px) {
+  .hide-for-small {
+    display: none !important;
+  }
+
+  .one {
+    flex: 1;
+  }
+  .two {
+    flex: 2;
+  }
+
+  .three {
+    flex: 3;
+  }
+}
+
+/* Larger screens */
+@media only screen and (min-width: 768px) {
+  .columns,
+  .rows,
+  #tools {
+    display: flex;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  #image-text {
+    width: 20%;
+    position: relative;
+
+    top: -170px;
+    left: 50px;
+
+    margin-bottom: -100px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    /* padding-left: 20px;
+  padding-right: 20px; */
+  }
+
+  .hide-for-medium {
+    display: none !important;
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+
+    /* CENTER CONTENT */
+    justify-content: space-between;
+  }
+
+  .node {
+    width: 30%;
+  }
+
+  .one {
+    flex: 1;
+  }
+  .two {
+    flex: 2;
+  }
+
+  .three {
+    flex: 3;
+  }
+
+  /* .vertical-link{
+    font-size: 1em;
+  } */
+}
