@@ -1,5 +1,4 @@
 /* Structure */
-
 body {
   font-family: Berlingske Sans, Arial, sans-serif;
   font-weight: 500;
@@ -12,6 +11,7 @@ body {
   /* margin:50px; */
   /* padding-right: 200px; */
 }
+
 
 #header-content {
   color: white;
@@ -45,18 +45,22 @@ body {
 }
 
 #search{
-  position: relative;
+  position: absolute;
   top: 20px;
-  right: -258px;
+  right: 235px;
+  /* right: -290px; */
+  /* right:100; */
 }
 
 
 #search-bar{
-  padding:10px;
+  /* padding:10px; */
   border:2px solid white;
+  padding:10px 35px;
+
 }
 
-.nav-links {
+.nav-links, .vertical-link, .big-news img {
   padding-right: 20px;
   /* background-color:pink; */
 }
@@ -80,10 +84,6 @@ footer {
   margin-top: 0;
 }
 
-.vertical-link {
-  padding-right: 20px;
-}
-
 .section2 {
   width: 96%;
   margin-top: -20px;
@@ -104,8 +104,8 @@ h3 {
 }
 
 .more-links {
-  position: absolute;
-  right: 225px;
+  /* position: absolute;
+  right: 225px; */
   text-align: right;
   padding-right: 5px;
 }
@@ -115,9 +115,6 @@ h3 {
   margin: 0;
 }
 
-.big-news img {
-  padding-right: 20px;
-}
 
 .big-news-text {
   width: 70%;
@@ -132,11 +129,6 @@ h3 {
 }
 #college-info-back{
   background-color: #ececec;
-}
-
-.more-links{
-  /* margin-top:0; */
-  padding-top:0;
 }
 
 /* FIX AND MAKE PRETTY */
@@ -233,6 +225,11 @@ h3 {
   background-color: #73000a;
 }
 
+#search :hover{
+  color:black;
+  background-color:white;
+}
+
 /* Typography */
 #tools {
   font-size: 0.625rem;
@@ -243,11 +240,13 @@ h3 {
 
 .college {
   color: #73000a;
+  /* font-size:larger; */
 }
 
-.vertical-link {
+.vertical-link :not(:last-child){
   /* font-size: 2em; */
   font-weight: 600;
+  font-size: large;
 
   /* background:pink; */
 }
@@ -280,7 +279,20 @@ h3 {
 
 .more-news {
   font-size: 12px;
+  padding-right:10px;
 }
+
+
+.node{
+  width:45%;
+  /* text-align:center; */
+  /* padding-right:20px; */
+}
+
+/* #college-information h4{
+padding-right:470px;
+} */
+
 
 /* .node{
   background-color:pink;
@@ -292,7 +304,9 @@ h3 {
     display: none !important;
   }
 
-  .one {
+  
+
+  /* .one {
     flex: 1;
   }
   .two {
@@ -301,14 +315,15 @@ h3 {
 
   .three {
     flex: 3;
-  }
+  } */
+
 }
 
 /* Larger screens */
 @media only screen and (min-width: 768px) {
   .columns,
   .rows,
-  #tools {
+  #tools, .gallery {
     display: flex;
   }
 
@@ -344,6 +359,7 @@ h3 {
 
   .node {
     width: 30%;
+    padding-right:20px;
   }
 
   .one {
@@ -356,8 +372,17 @@ h3 {
   .three {
     flex: 3;
   }
-
-  /* .vertical-link{
-    font-size: 1em;
-  } */
+/*
+  .more-links{
+    position:relative;
+    right:-500px;
+    padding-top:0;
+  }
+*/
+  
+.more-links{
+  position:relative;
+  /* margin-top:0; */
+  padding-top:0;
+}
 }
