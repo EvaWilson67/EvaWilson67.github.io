@@ -69,7 +69,19 @@ body {
 }
 
 
-#main-header, #footer-bottom {
+#main-header{
+  background: black;
+  height:100px;
+  /* margin:50px; */
+  /* padding-right: 200px; */
+}
+
+#header-med-padding{
+  height:31px;
+
+}
+
+#footer-bottom {
   background: black;
   /* margin:50px; */
   /* padding-right: 200px; */
@@ -80,7 +92,7 @@ body {
   margin: auto;
   border: auto solid black;
   width: 100%;
-  height: 100px;
+  /* height: 100px; */
 }
 
 #main-information {
@@ -174,14 +186,6 @@ h3 {
   padding-right: 10px;
 }
 
-.more-links {
-  position: absolute;
-  right: 225px;
-  text-align: right;
-  padding-right: 5px;
-  padding-top: 0;
-}
-
 .resources {
   padding-right: 50px;
   margin: auto;
@@ -195,24 +199,43 @@ h3 {
   width: 70%;
 }
 
-#college-information {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 17px;
+.college-name{
+  text-wrap: nowrap;
 }
+.college-name > h4{
+  margin: 0px;
+  line-height: 22px; /* Helped with padding and alignment */
+}
+.college-name-outer{
+  padding:22px;
+}
+.more-links-height{
+  height:22px;
+}
+.more-links-height > ul{
+  margin:0px;
+  height:22px;
+}
+
+.more-links{
+  text-align:left;
+}
+
 #college-info-back {
   background-color: #ececec;
 }
 
 /* Main Nagivation */
 .nav-links li,
-.vertical-link li,
 .more-links li,
-.footer-bottom-links li,
-.footer-links li {
+.footer-bottom-links li {
   list-style-type: none;
   display: inline-block;
+}
+
+.vertical-link li, .footer-links li{
+  list-style-type: none;
+
 }
 
 #tools ul {
