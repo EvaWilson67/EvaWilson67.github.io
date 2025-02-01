@@ -12,13 +12,6 @@ body {
   position: relative;
   right: -250px;
 }
-
-#main-header {
-  background: black;
-  /* margin:50px; */
-  /* padding-right: 200px; */
-}
-
 #header-content {
   color: white;
   margin-right: auto;
@@ -29,7 +22,7 @@ body {
 
 .center {
   max-width: 1150px;
-  display: table;
+  /* display: table; */
   margin-right: auto;
   margin-left: auto;
 }
