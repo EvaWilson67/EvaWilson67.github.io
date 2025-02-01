@@ -33,11 +33,14 @@ body {
 
 #main-header, #footer-bottom {
   background: black;
-  /* margin:50px; */
-  /* padding-right: 200px; */
 }
 
-#header-content, .footer-bottom-links{
+.footer-bottom-links{
+  margin-top:0;
+  margin-bottom:0;
+}
+
+#header-content{
   color: white;
   margin: auto;
   border: auto solid black;
@@ -168,6 +171,7 @@ h3 {
   padding-top: 0;
 }
 
+
 /* FIX AND MAKE PRETTY */
 
 /* Main Nagivation */
@@ -238,7 +242,7 @@ h3 {
 
 .nav-links a:hover,
 .footer-links a:hover,
-.links a:hover {
+.links a:hover, .footer-bottom-links a:hover, .more-links a:hover {
   background-color: #cc2e40;
 }
 
@@ -247,8 +251,11 @@ h3 {
 }
 
 .more-links a:hover {
-  background-color: #73000a;
   color: white;
+}
+
+.footer-bottom-links li:not(:last-child) {
+  border-right: 1px solid white;
 }
 
 /* Box Links */
