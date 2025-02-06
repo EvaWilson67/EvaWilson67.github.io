@@ -1,0 +1,119 @@
+/* Structure */
+
+:root {
+  --main-background-color: white;
+  --secondary-background-color: grey;
+  --header-footer-background-color: black;
+
+  --secondary-color: white;
+  --third-color: red;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 0px;
+}
+
+#main-header,
+#main-footer {
+  background-color: var(--header-footer-background-color);
+}
+
+#page-content {
+}
+
+#non-recent-pictures,
+#most-recent-pictures {
+  display: block;
+  margin-left: auto;
+  max-width: 600px;
+}
+
+/* Main Nagivation */
+#main-nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+#main-nav a:hover {
+  color: var(--third-color);
+}
+
+/* Typography */
+#main-nav {
+  text-align: center;
+}
+
+#main-nav {
+  display: flex;
+}
+
+/* Helper Tools*/
+.right {
+  padding-right: 10px;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+
+  width: 85%;
+  margin: auto;
+}
+.sector {
+  padding: 10px;
+}
+
+/* Smaller screens */
+@media only screen and (max-width: 767px) {
+  .hide-for-small {
+    visibility: hidden !important;
+  }
+
+  .flex-small {
+    display: flex;
+  }
+}
+
+/* Larger screens */
+@media only screen and (min-width: 768px) {
+  .hide-for-small {
+    visibility: visible !important;
+  }
+  .columns {
+    display: flex;
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .one {
+    flex: 1;
+  }
+  .two {
+    flex: 2;
+  }
+  .three {
+    flex: 3;
+  }
+
+  .right-image {
+    float: right;
+  }
+
+  #page-content {
+  }
+}

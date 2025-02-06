@@ -1,0 +1,105 @@
+/* Structure */
+
+:root {
+  --main-background-color: #f1f2e9;
+  --main-column-background: #f2f0d5;
+  --main-text-color: #5d878c;
+  --secondary-text-color: #e0998c;
+
+  --star-color: black;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--main-background-color);
+}
+
+#content {
+  margin: auto;
+
+  /* background:purple; */
+}
+
+.grids {
+  background: var(--main-column-background);
+
+  min-width: 250px;
+  min-height: 300px;
+
+  border: 1px solid var(--main-text-color);
+
+  img {
+    display: block;
+    margin: auto;
+    /* max-width:100%;
+  height:auto; */
+  }
+}
+
+#image-change img{
+  width:200px;
+  height:200px;
+}
+
+#star {
+  /* width: 150px; */
+  width:65%;
+  margin: 20px auto;
+  aspect-ratio: 1;
+  background: var(--star-color);
+  clip-path: polygon(
+    50% 0,
+    calc(50% * (1 + sin(0.4turn))) calc(50% * (1 - cos(0.4turn))),
+    calc(50% * (1 - sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
+    calc(50% * (1 + sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
+    calc(50% * (1 - sin(0.4turn))) calc(50% * (1 - cos(0.4turn)))
+  );
+}
+
+/* Typography */
+#main-header h1,
+#main-header h2,
+#main-footer h4,
+.grids h3, #color-selector {
+  text-align: center;
+}
+
+#main-header h1,
+.grids h3,
+#hello-grid {
+  color: var(--main-text-color);
+}
+
+#main-header h2 {
+  color: var(--secondary-text-color);
+}
+
+#main-footer h4 {
+  color: var(--main-text-color);
+}
+
+#hello-grid p {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .columns {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #content {
+    width: 60%;
+  }
+
+  .grids {
+    margin: 20px auto;
+    flex-basis: 25%;
+  }
+
+  .three {
+    flex: 3;
+  }
+}
