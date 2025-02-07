@@ -72,6 +72,14 @@ main {
   color:purple;
 }
 
+.happy{
+  color:pink;
+}
+
+.hidden{
+  display:none;
+}
+
 /* Animations */
 #animation-fun {
   background:#a0ccd8;

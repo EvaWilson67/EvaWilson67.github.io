@@ -13,6 +13,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   margin: 0px;
+  /* background-color:var(--secondary-background-color); */
 }
 
 #main-header,
@@ -21,6 +22,8 @@ body {
 }
 
 #page-content {
+  width: 85%;
+  margin: auto;
 }
 
 #non-recent-pictures,
@@ -47,7 +50,7 @@ body {
 }
 
 /* Typography */
-#main-nav {
+#main-nav, .unit{
   text-align: center;
 }
 
@@ -63,24 +66,19 @@ body {
 .center {
   align-items: center;
   justify-content: center;
-
-  width: 85%;
-  margin: auto;
 }
+
+
 .sector {
   padding: 10px;
+  display: flex;
 }
 
-/* Smaller screens */
-@media only screen and (max-width: 767px) {
-  .hide-for-small {
-    visibility: hidden !important;
-  }
-
-  .flex-small {
-    display: flex;
-  }
+.hide-for-small {
+  visibility: hidden !important;
 }
+
+
 
 /* Larger screens */
 @media only screen and (min-width: 768px) {
@@ -99,6 +97,9 @@ body {
   .container {
     width: 50%;
   }
+  .unit{
+    width:30%;
+  }
 
   .one {
     flex: 1;
@@ -116,4 +117,8 @@ body {
 
   #page-content {
   }
+
+  /* .node{
+    width:50%;
+  } */
 }
