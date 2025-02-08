@@ -39,25 +39,8 @@ body {
   height:200px;
 }
 
-/* https://css-shape.com/star/ */
-/* #star {
-  width:65%;
-  margin: 20px auto;
-  aspect-ratio: 1;
-  background: var(--star-color);
-  clip-path: polygon(
-    50% 0,
-    calc(50% * (1 + sin(0.4turn))) calc(50% * (1 - cos(0.4turn))),
-    calc(50% * (1 - sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
-    calc(50% * (1 + sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
-    calc(50% * (1 - sin(0.4turn))) calc(50% * (1 - cos(0.4turn)))
-  );
 
-} */
-
-
-
-
+/* /https://dev.to/afif/css-shapes-with-rounded-corners-56h */
 #star{
   display:inline-block;
   width:200px;
@@ -70,11 +53,15 @@ body {
    display:block;
    padding-top:100%;
    background:currentColor;
-   clip-path: polygon(50% 0%, 62% 31%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 29% 57%, 2% 35%, 37% 31%);
-
+   /* https://css-shape.com/star/ */
+   clip-path: polygon(
+    50% 0,
+    calc(50% * (1 + sin(0.4turn))) calc(50% * (1 - cos(0.4turn))),
+    calc(50% * (1 - sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
+    calc(50% * (1 + sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
+    calc(50% * (1 - sin(0.4turn))) calc(50% * (1 - cos(0.4turn)))
+  );
   }
-
-
 
 
 /* Typography */
