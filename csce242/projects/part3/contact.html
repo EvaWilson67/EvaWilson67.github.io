@@ -7,9 +7,9 @@
 </head>
 
 <body>
-    <div id="content">
-        <header id="main-header">
-            <div id="main-nav" class="columns two center">
+    <div class="content">
+        <header class="main-header">
+            <div class="main-nav columns two center">
                 <ul class="hide-for-small">
                     <li><a href="index.html"> Home </a></li>
                     <li><a href="house_plants.html"> House Plants </a></li>
@@ -24,13 +24,43 @@
             </div>
         </header>
 
-        <main id="page-content">
+        <main class="page-content">
+                <div id="about-section">
+                    <section>
+                        <h4>About Us</h4>
+                    </section>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus erat at nulla
+                            sollicitudin, a ultricies lectus egestas. Donec blandit est ultrices, sollicitudin sem
+                            eu, suscipit metus.</p>
+                    </div>
+                </div>
+                
+            <div id="contact-section" class="center">
+                <section>
+                    <h4>Contact Us</h4>
+                </section>
+                <div>
+                    <input type="text" id="txt-email" value="Enter Email">
+                </div>
+                <div>
+                    <p>How can we help you?</p>
+                    <textarea type="text" id="txt-box" rows="10" cols="80">
+                    </textarea>                       
 
+                    <div class="columns two gallery">
+                        <p id="submission-response" ></p>
+                        <input type="submit" id="btn-submit">
+                        
+                    </div>
+                </div>
+            </div>
         </main>
-        <footer id="main-footer">
+        <footer class="main-footer">
             <p>&copy; EvaWilson</p>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

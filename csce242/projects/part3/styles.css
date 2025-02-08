@@ -2,7 +2,7 @@
 
 :root {
   --main-background-color: white;
-  --secondary-background-color: grey;
+  --secondary-background-color: lightgrey;
   --header-footer-background-color: black;
 
   --secondary-color: white;
@@ -16,51 +16,177 @@ body {
   /* background-color:var(--secondary-background-color); */
 }
 
-#main-header,
-#main-footer {
+.main-header,
+.main-footer {
   background-color: var(--header-footer-background-color);
 }
 
-#page-content {
+.footer-content{
+  min-height:100px;
+  width: 70%;
+  margin: auto;
+
+  color:var(--secondary-color);
+}
+
+.page-content {
   width: 85%;
   margin: auto;
+  background-color:var(--main-background-color);
+}
+
+.page-background{
+  background-color:var(--secondary-background-color);
 }
 
 #non-recent-pictures,
 #most-recent-pictures {
   display: block;
-  margin-left: auto;
   max-width: 600px;
 }
 
+#contact-section,
+#about-section {
+  /* max-width: 378px; */
+
+  background: var(--secondary-background-color);
+  margin: 50px;
+  padding: 100px;
+  padding: 20px;
+
+  max-height: 330px;
+  /* min-height:330px; */
+}
+
+.care-box {
+  background: var(--secondary-background-color);
+  margin: 10px;
+}
+.idea-img {
+  margin: 10px 10px 10px 0px;
+}
+
+.title-container {
+  position: relative;
+  top: -50px;
+  left: 40px;
+
+  margin-bottom: -50px;
+  width: 80%;
+}
+
+.node {
+  margin: 5px;
+  background-color: var(--secondary-background-color);
+  img {
+    margin: 5px;
+  }
+  padding: 10px;
+}
+
+.house-plants, .house-fragments {
+  margin: 10px;
+}
+
+.house-plants-information {
+  /* background-color:var(--secondary-background-color); */
+  border: 1px solid var(--secondary-background-color);
+}
+
+.segment {
+  margin: 10px;
+  background-color: var(--main-background-color);
+}
+
+.blog{
+  margin:10px;
+  background-color:var(--secondary-background-color);
+  img{
+    padding:10px;
+  }
+}
+
+.back-button{
+  width:150px;
+  height:50px;
+  padding:20px;
+}
+
+/* .house-fragments{
+  background-color:var(--secondary-background-color);
+  margin:10px;
+} */
+
+.fragments{
+  background-color:var(--secondary-color);
+  border:1px solid var(--header-footer-background-color);
+  margin:10px 0px;
+}
+
 /* Main Nagivation */
-#main-nav li {
+.main-nav li {
   list-style-type: none;
   display: inline-block;
   padding: 10px;
 }
 
-#main-nav a {
+.main-nav a {
   text-decoration: none;
   color: var(--secondary-color);
 }
 
-#main-nav a:hover {
+.links{
+  text-decoration: none;
+  list-style-type: none;
+  color:black;
+}
+
+.main-nav a:hover {
   color: var(--third-color);
 }
 
 /* Typography */
-#main-nav, .unit{
+.main-nav,
+.unit,
+.house-plants,
+#submission-response,
+.node,
+.blog, .house-fragments h2, .house-fragments h3{
   text-align: center;
 }
+#submission-response {
+  margin: 0px;
+}
 
-#main-nav {
+.main-nav {
   display: flex;
 }
 
+.house-plants h3 {
+  background-color: var(--secondary-background-color);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog h3 {
+  padding-left: 10px;
+  margin: 10px;
+}
+
 /* Helper Tools*/
+
+.height-center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .right {
   padding-right: 10px;
+}
+
+.left {
+  padding-left: 10px;
 }
 
 .center {
@@ -68,20 +194,40 @@ body {
   justify-content: center;
 }
 
+.margin{
+  margin-left:auto;
+  margin-right:auto;
+}
 
 .sector {
   padding: 10px;
   display: flex;
 }
 
-.hide-for-small {
-  visibility: hidden !important;
+.small-130x {
+  padding: 10px;
 }
 
+.hidden-title h4 {
+  visibility: hidden;
+  border: 1px solid transparent;
+}
 
+.unhidden-title h4 {
+  visibility: visible;
+  background-color: white;
+  border: 1px solid black;
+}
+
+/* Small Screens*/
+@media only screen and (max-width: 999px) {
+  .hide-for-small {
+    visibility: hidden !important;
+  }
+}
 
 /* Larger screens */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
   .hide-for-small {
     visibility: visible !important;
   }
@@ -96,10 +242,19 @@ body {
 
   .container {
     width: 50%;
+    min-width: 320px;
   }
-  .unit{
-    width:30%;
+  .unit {
+    width: 30%;
   }
+
+  .blog, .house-fragments {
+    width: 45%;
+  }
+
+  /* .node{
+    width:60%;
+  } */
 
   .one {
     flex: 1;
@@ -115,10 +270,15 @@ body {
     float: right;
   }
 
-  #page-content {
+  .page-content {
+    max-width: 900px;
   }
 
-  /* .node{
-    width:50%;
-  } */
+  .image-text{
+    position:relative;
+    top:-100px;
+    left:10px;
+    /* margin-bottom:-100px; */
+  }
+
 }
