@@ -20,17 +20,13 @@ body {
 
 .grids {
   background: var(--main-column-background);
-
   min-width: 250px;
   min-height: 300px;
-
   border: 1px solid var(--main-text-color);
-
   img {
     display: block;
     margin: auto;
-    /* max-width:100%;
-  height:auto; */
+
   }
 }
 
@@ -42,10 +38,9 @@ body {
 
 /* /https://dev.to/afif/css-shapes-with-rounded-corners-56h */
 #star{
-  display:inline-block;
   width:200px;
   color: var(--star-color);
-  margin:20px;
+  margin:auto;
   filter:url(#round);
 }
 #star::before {
