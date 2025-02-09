@@ -258,7 +258,6 @@ body {
   border: 1px solid var(--header-footer-background-color);
 }
 
-
 /* Small Screens*/
 @media only screen and (max-width: 999px) {
   .hide-for-small {
