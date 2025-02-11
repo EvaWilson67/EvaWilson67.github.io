@@ -1,0 +1,463 @@
+/* Structure */
+
+:root {
+  --main-background-color: white;
+  --secondary-background-color: lightgrey;
+  --header-footer-background-color: black;
+
+  --secondary-color: white;
+  --third-color: red;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 0px;
+
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* background-color:var(--secondary-background-color); */
+}
+
+#main-header,
+.main-footer {
+  background-color: var(--header-footer-background-color);
+  margin:0px;
+}
+
+.footer-content {
+  min-height: 100px;
+  width: 70%;
+  margin: auto;
+  padding-bottom:20px;
+
+  color: var(--secondary-color);
+}
+.main-footer{
+  display:block;
+  position:absolute;
+  left:0;
+  right:0;
+  /* bottom:0; */
+  background-color: var(--header-footer-background-color);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  /* height: 36px; */
+  text-align: center;
+}
+.main-footer p{
+  margin:0px;
+}
+
+.page-content {
+  margin: auto;
+  background-color: var(--main-background-color);
+}
+
+.page-background {
+  padding-top: 1px;
+  background-color: var(--secondary-background-color);
+}
+
+.blog-image {
+  /* display: inline-block; */
+
+  margin: 20px;
+  border: 10px solid var(--main-background-color);
+}
+
+.blog-image:nth-child(1n + 2) {
+  border: 10px solid var(--header-footer-background-color);
+}
+
+#non-recent-pictures,
+#most-recent-pictures {
+  display: block;
+  max-width: 600px;
+}
+
+#contact-section,
+#about-section {
+  /* max-width: 378px; */
+
+  background: var(--secondary-background-color);
+  margin: 50px;
+  padding: 100px;
+  padding: 20px;
+
+  max-height: 330px;
+  /* min-height:330px; */
+}
+
+.care-box {
+  background: var(--secondary-background-color);
+  margin: 10px;
+}
+.idea-img {
+  margin: 10px;
+}
+
+.title-container {
+  position: relative;
+  top: -50px;
+  left: 40px;
+
+  margin-bottom: -50px;
+  width: 80%;
+}
+
+.node {
+  margin: 5px;
+  background-color: var(--secondary-background-color);
+  img {
+    margin: 5px;
+  }
+  padding: 10px;
+}
+
+.house-plants,
+.plant-fragments {
+  margin: 10px;
+}
+
+.house-plants-information {
+  /* background-color:var(--secondary-background-color); */
+  border: 1px solid var(--secondary-background-color);
+}
+
+.segment {
+  margin: 10px;
+  background-color: var(--main-background-color);
+  border:1px solid var(--secondary-background-color);
+}
+
+.blog {
+  margin: 10px;
+  background-color: var(--secondary-background-color);
+  img {
+    padding: 10px;
+  }
+}
+
+.back-button {
+  width: 150px;
+  height: 50px;
+  padding: 20px;
+}
+
+.plant-fragments {
+  img {
+    width: 100%;
+  }
+}
+
+.fragments {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--header-footer-background-color);
+  margin: 10px 0px;
+}
+
+
+.blog-text {
+  background-color: var(--secondary-color);
+  border: 10px solid var(--header-footer-background-color);
+}
+
+.unit {
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.gardening-col{
+  margin:20px;
+}
+
+/* Main Nagivation */
+#toggle-nav div{
+  width:25px;
+  height:2px;
+  background-color:var(--secondary-color);
+  margin:6px 0;
+}
+
+#main-nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+#nav-items li {
+  list-style-type: none;
+  padding: 10px 10px 0px 10px;
+  font-size: large;
+  border-bottom: 2px solid var(--main-background-color);
+}
+
+#main-nav ul, #nav-items ul,
+.links ul {
+  padding-left: 0px;
+}
+
+#nav-items {
+  padding-left: 0;
+  margin-bottom:0;
+}
+
+#main-nav a,
+#nav-items a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.links {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+#main-nav a:hover,
+#nav-items a:hover {
+  color: var(--third-color);
+}
+
+/* Typography */
+#main-nav,
+.unit,
+.house-plants,
+#submission-response,
+.node,
+.blog,
+.plant-fragments h2,
+.plant-fragments h3,
+#nav-items,
+#most-recent-pictures h3, .footer-content h2, .page-content h1{
+  text-align: center;
+}
+#submission-response{
+  margin: 0px;
+}
+
+.house-plants h3 {
+  background-color: var(--secondary-background-color);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog h3 {
+  padding-left: 10px;
+  margin: 10px;
+}
+
+#most-recent-pictures h3 {
+  background: var(--main-background-color);
+  padding-left: 10px;
+  width: 65%;
+}
+
+#care-instructions h2 {
+  margin: 10px;
+}
+
+/* Helper Tools*/
+
+.height-center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.right {
+  padding-right: 10px;
+}
+
+.left {
+  padding-left: 10px;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.margin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small-130x-top {
+  margin-bottom: auto;
+}
+
+.hidden-title h4 {
+  visibility: hidden;
+  border: 1px solid transparent;
+}
+
+.unhidden-title h4 {
+  visibility: visible;
+  background-color: var(--main-background-color);
+  border: 1px solid var(--header-footer-background-color);
+}
+
+.hide {
+  display:none !important;
+}
+
+#toggle-nav {
+  visibility: visible;
+  float:right;
+  position:relative;
+  top:-40px;
+  right:20px;
+  margin-bottom:-10px;
+}
+
+
+
+
+/* Small Screens*/
+@media only screen and (max-width: 999px) {
+  .hide-for-small {
+    /* visibility: hidden !important; */
+    display: none !important;
+  }
+  .hide-for-large {
+    display: block !important;
+  }
+
+  .columns-small {
+    display: flex;
+  }
+
+  .gallery-small {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .segment {
+    flex-wrap: wrap;
+    img {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+
+
+  .container,
+  .care-box {
+    img {
+      max-width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding:10px;
+    }
+  }
+
+  .back-button {
+    float: right;
+  }
+
+  #care-instructions h2 {
+    text-align: center;
+  }
+
+  .care-box{
+    text-align: center;
+  }
+
+  .gardening-col h2{
+    text-align:center;
+  }
+}
+
+/* Larger screens */
+@media only screen and (min-width: 1000px) {
+  .hide-for-small {
+    /* visibility: visible !important; */
+    display: block !important;
+  }
+
+  .hide-for-large {
+    display: none !important;
+  }
+
+  #main-nav {
+    display: flex;
+  }
+
+  .columns {
+    display: flex;
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .container {
+    width: 50%;
+    min-width: 320px;
+    img {
+      max-width: 100%;
+    }
+  }
+  .unit {
+    width: 30%;
+  }
+
+  .blog,
+  .plant-fragments {
+    width: 45%;
+  }
+
+  .one {
+    flex: 1;
+  }
+  .two {
+    flex: 2;
+  }
+  .three {
+    flex: 3;
+  }
+
+  .page-content {
+    width: 85%;
+    max-width: 1000px;
+  }
+
+  .image-text {
+    position: relative;
+    top: -100px;
+    left: 10px;
+    /* margin-bottom:-100px; */
+  }
+
+  .blog-text {
+    position: relative;
+    right: -100px;
+    top: -70px;
+    margin-bottom: -90px;
+  }
+
+  .sector {
+    padding: 10px;
+    /* display: flex; */
+    img {
+      /* width:100%; */
+    }
+  }
+
+  .small-130x-top {
+    padding: 40px;
+    margin-bottom: auto;
+  }
+
+  #toggle-nav {
+    visibility: hidden; /* or opacity: 0; */
+  }
+  
+}
