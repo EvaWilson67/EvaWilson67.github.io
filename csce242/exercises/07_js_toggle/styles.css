@@ -92,7 +92,7 @@ main {
   position:relative;
 }
 
-#ball {
+#ball, #circle {
   height: 30px;
   width:30px;
   background:blue;
