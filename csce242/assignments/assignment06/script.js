@@ -62,7 +62,7 @@ document.getElementById("txt-transportation").onkeyup = (event) => {
         document.getElementById("changeable-image").src="images/scooter.jpg";
     }
     else if(transportation=="skateboard"){
-        document.getElementById("changeable-image").src="images/scooter.jpg";
+        document.getElementById("changeable-image").src="images/skateboard.jpg";
     }
     else{
         document.getElementById("changeable-image").src="https://place-hold.it/200";
