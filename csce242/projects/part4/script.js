@@ -14,14 +14,17 @@ if (element) {
   };
 }
 
+const garden = document.getElementById("hidden-2");
 
-document.getElementById("hidden-2").onmouseover = () => {
-  document.getElementById("hidden-2").classList.add("unhidden-title");
-};
+if (garden) {
+  document.getElementById("hidden-2").onmouseover = () => {
+    document.getElementById("hidden-2").classList.add("unhidden-title");
+  };
 
-document.getElementById("hidden-2").onmouseleave = () => {
-  document.getElementById("hidden-2").classList.remove("unhidden-title");
-};
+  document.getElementById("hidden-2").onmouseleave = () => {
+    document.getElementById("hidden-2").classList.remove("unhidden-title");
+  };
+}
 
 const navigation = document.getElementById("toggle-nav");
 console.log(navigation);
@@ -32,4 +35,3 @@ if (navigation) {
 } else {
   console.log("Button not found!");
 }
-
