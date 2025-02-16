@@ -15,15 +15,13 @@
                     <li><a href="house_plants.html"> House Plants </a></li>
                     <li><a href="gardening.html"> Gardening </a></li>
                 </ul>
-                <img class="logo" src="https://place-hold.it/80">
+                <img class="logo" src="images/freelogo.jpg">
                 <ul class="hide-for-small">
                     <li><a href="care.html"> Care </a></li>
                     <li><a href="resources.html"> Resources </a></li>
                     <li><a href="contact.html"> Contact </a></li>
                 </ul>
             </div>
-
-            <!-- WILL FIX -->
             <div id="toggle-nav">
                 <div></div>
                 <div></div>
@@ -60,9 +58,19 @@
                 <section>
                     <h2>Contact Us</h2>
                 </section>
-                <div>
-                    <input type="text" id="txt-email" value="Enter Email">
+                <div id="txt-information" class="columns">
+                    <!-- <input type="text" id="txt-email" value="Enter Email">
+                    <input type="text" id="txt-email" value="Enter Email"> --> 
+                    <div class="contact-text-box">
+                        <label for="txt-email">Enter Email:</label> <br>
+                        <input type="text" id="txt-email">
+                    </div>
+                    <div class="contact-text-box">
+                        <label for="txt-name">Enter Name:</label> <br>
+                        <input type="text" id="txt-name">
+                    </div>
                 </div>
+
                 <div>
                     <p>How can we help you?</p>
                     <textarea type="text" id="txt-box">
@@ -70,7 +78,10 @@
 
                     <div class="columns two gallery">
                         <p id="submission-response"></p>
-                        <input type="submit" id="btn-submit">
+                        <!-- <input type="submit" id="btn-submit"> -->
+                        <!-- <button type="submit" id="btn-submit" value="Submit"> -->
+                            <button type="submit" id="btn-submit">Submit</button>
+
                     </div>
                 </div>
             </div>

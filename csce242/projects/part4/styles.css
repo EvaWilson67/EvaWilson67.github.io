@@ -2,11 +2,37 @@
 
 :root {
   --main-background-color: white;
-  --secondary-background-color: lightgrey;
-  --header-footer-background-color: black;
+  --secondary-background-color:#DFE0DC;
+
+  --header-footer-background-color: #283106;
+  --header-footer-color:white;
+
+  --container-background-color:#B0B6BC;
+  --container-border-color:#777E5C;
+
+  --navigation-link-hover:#D1D8BD;
+
+  /* --main-background-color: white;
+
+  --secondary-background-color:#DFE0DC; */
+  /* --secondary-background-color: #B0B6BC; */
+  /* 
+
+  --border-color:#B0B6BC;
+
 
   --secondary-color: white;
-  --third-color: red;
+  --third-color: red; */
+
+  /* 
+#DFE0DC
+#D1D8BD
+#777E5C
+#C7C2AB
+#B0B6BC
+#283106
+
+*/
 }
 
 body {
@@ -26,13 +52,17 @@ body {
   width: 70%;
   margin: auto;
   padding-bottom: 20px;
-
-  color: var(--secondary-color);
+  color: var(--header-footer-color);
 }
 
-.footer-conter p {
+.logo{
+  margin:10px;
+  padding-top:10px;
+}
+
+/* .footer-conter p {
   color: white;
-}
+} */
 .main-footer {
   display: block;
   position: absolute;
@@ -45,6 +75,7 @@ body {
   padding-left: 24px;
   /* height: 36px; */
   text-align: center;
+  color:var(--header-footer-color);
 }
 .main-footer p {
   margin: 0px;
@@ -64,19 +95,19 @@ body {
 .blog-image {
   /* display: inline-block; */
   margin: 20px;
-  border: 10px solid var(--main-background-color);
+  border: 10px solid var(--container-background-color);
 }
 
 .blog-image:nth-child(1n + 2) {
-  border: 10px solid var(--header-footer-background-color);
+  border: 10px solid var(--container-border-color);
 }
 
-.large-image{
-max-width:300px;
+.large-image {
+  max-width: 300px;
 }
 
-.small-image{
-max-width:100px;
+.small-image {
+  max-width: 100px;
 }
 
 #non-recent-pictures,
@@ -99,7 +130,8 @@ max-width:100px;
 }
 
 .care-box {
-  background: var(--secondary-background-color);
+  background: var(--main-background-color);
+  border:10px solid var(--container-background-color);
   margin: 10px;
 }
 
@@ -108,22 +140,31 @@ textarea {
   height: 200px;
 }
 
+txt-information input{
+  width:100%;
+  /* width:100%;
+  background-color:pink; */
+}
+
 .title-container {
   position: relative;
   top: -50px;
   margin-bottom: -50px;
 }
 
+
 .node {
-  margin: 15px;
+  margin: 10px;
   background-color: var(--secondary-background-color);
+  border:10px solid var(--container-border-color);
   /* max-width:10%; */
   img {
     margin: 5px;
-    width:200px;
+    width: 200px;
   }
   padding: 10px;
 }
+
 
 .house-plants,
 .plant-fragments {
@@ -131,14 +172,15 @@ textarea {
 }
 
 .house-plants-information {
-  /* background-color:var(--secondary-background-color); */
-  border: 1px solid var(--secondary-background-color);
+  background-color: var(--secondary-background-color);
+  border: 2px solid var(--container-border-color);
+
 }
 
 .segment {
   margin: 10px;
   background-color: var(--main-background-color);
-  border: 1px solid var(--secondary-background-color);
+  border: 2px solid var(--container-border-color);
   img {
     padding: 10px;
   }
@@ -148,10 +190,11 @@ textarea {
   margin: 10px;
   background-color: var(--secondary-background-color);
   img {
-    max-width:200px;
-    max-height:200px;
-    border:2px solid var(--main-background-color);
-    margin:10px;  }
+    max-width: 200px;
+    max-height: 200px;
+    border: 2px solid var(--main-background-color);
+    margin: 10px;
+  }
 }
 
 .back-button {
@@ -167,24 +210,49 @@ textarea {
 }
 
 .fragments {
-  background-color: var(--secondary-color);
-  border: 1px solid var(--header-footer-background-color);
+  background-color: var(--main-background-color);
+  border: 1px solid var(--container-border-color);
   margin: 10px 0px;
 }
 
 .blog-text {
-  background-color: var(--secondary-color);
-  border: 10px solid var(--header-footer-background-color);
+  background-color: var(--main-background-color);
+  border: 10px solid var(--container-border-color);
 }
 
 .unit {
   margin: 5px;
-  border: 1px solid black;
+  background-color: var(--main-background-color);
+  border: 1px solid var(--container-border-color);
 }
 
 .gardening-col {
   margin: 20px;
 }
+
+.contact-text-box{
+  margin:10px;
+  
+}
+
+/* .contact-text-box text{
+  width:100%;
+  color:pink;
+} */
+
+.contact-text-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 5px; 
+}
+
 
 /* Main Nagivation */
 #toggle-nav div {
@@ -197,7 +265,7 @@ textarea {
 #main-nav li {
   list-style-type: none;
   display: inline-block;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 #nav-items li {
@@ -221,7 +289,7 @@ textarea {
 #main-nav a,
 #nav-items a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--header-footer-color);
 }
 
 .links {
@@ -236,7 +304,12 @@ textarea {
 #main-nav a:hover,
 #nav-items a:hover,
 .refrences a:hover {
-  color: var(--third-color);
+  color: var(--navigation-link-hover);
+}
+
+#main-nav li + li::before {
+  content: " | ";
+  color: var(--secondary-background-color);
 }
 
 /* Typography */
@@ -260,6 +333,7 @@ textarea {
 
 .house-plants h3 {
   background-color: var(--secondary-background-color);
+  border:2px solid var(--container-border-color);
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -272,16 +346,23 @@ textarea {
 
 #most-recent-pictures h3 {
   background: var(--main-background-color);
+  border:5px solid var(--container-border-color);
   padding-left: 10px;
   width: 65%;
+  margin-bottom:-10px;
 }
 
 .page-content h1,
 .page-content h2,
 .page-content h3,
-.page-content p {
+.page-content p{
   text-align: center;
+  color: var(--header-footer-background-color);
 }
+/* 
+.gardening-col h3{
+
+} */
 
 /* Helper Tools*/
 
@@ -318,13 +399,13 @@ textarea {
 
 .hidden-title h4 {
   visibility: hidden;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
 }
 
 .unhidden-title h4 {
   visibility: visible;
   background-color: var(--main-background-color);
-  border: 1px solid var(--header-footer-background-color);
+  border: 1px solid var(--border-color);
 }
 
 .hide {
@@ -337,10 +418,6 @@ textarea {
   position: relative;
   top: -40px;
   right: 20px;
-
-  /* margin-bottom:-30px; */
-  /* padding:20px; */
-
   display: inline-block;
 }
 
@@ -484,10 +561,6 @@ textarea {
 
   .sector {
     padding: 10px;
-    /* display: flex; */
-    img {
-      /* width:100%; */
-    }
   }
 
   .small-130x-top {
