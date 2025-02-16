@@ -29,6 +29,10 @@ body {
 
   color: var(--secondary-color);
 }
+
+.footer-conter p {
+  color: white;
+}
 .main-footer {
   display: block;
   position: absolute;
@@ -49,6 +53,7 @@ body {
 .page-content {
   margin: auto;
   background-color: var(--main-background-color);
+  padding: 5px;
 }
 
 .page-background {
@@ -58,13 +63,20 @@ body {
 
 .blog-image {
   /* display: inline-block; */
-
   margin: 20px;
   border: 10px solid var(--main-background-color);
 }
 
 .blog-image:nth-child(1n + 2) {
   border: 10px solid var(--header-footer-background-color);
+}
+
+.large-image{
+max-width:300px;
+}
+
+.small-image{
+max-width:100px;
 }
 
 #non-recent-pictures,
@@ -82,7 +94,7 @@ body {
   padding: 100px;
   padding: 20px;
 
-  max-height: 330px;
+  min-height: 130px;
   /* min-height:330px; */
 }
 
@@ -91,27 +103,24 @@ body {
   margin: 10px;
 }
 
-.description:nth-child(odd), .idea-img{
-  /* padding-left:20px; */
-  margin: 20px;
-
+textarea {
+  width: 100%;
+  height: 200px;
 }
-
 
 .title-container {
   position: relative;
   top: -50px;
-  left: 40px;
-
   margin-bottom: -50px;
-  width: 80%;
 }
 
 .node {
   margin: 15px;
   background-color: var(--secondary-background-color);
+  /* max-width:10%; */
   img {
     margin: 5px;
+    width:200px;
   }
   padding: 10px;
 }
@@ -130,8 +139,8 @@ body {
   margin: 10px;
   background-color: var(--main-background-color);
   border: 1px solid var(--secondary-background-color);
-  img{
-    padding:10px;
+  img {
+    padding: 10px;
   }
 }
 
@@ -139,8 +148,10 @@ body {
   margin: 10px;
   background-color: var(--secondary-background-color);
   img {
-    padding: 10px;
-  }
+    max-width:200px;
+    max-height:200px;
+    border:2px solid var(--main-background-color);
+    margin:10px;  }
 }
 
 .back-button {
@@ -219,8 +230,12 @@ body {
   color: black;
 }
 
+.refrences a {
+  color: black;
+}
 #main-nav a:hover,
-#nav-items a:hover {
+#nav-items a:hover,
+.refrences a:hover {
   color: var(--third-color);
 }
 
@@ -261,12 +276,22 @@ body {
   width: 65%;
 }
 
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content p {
+  text-align: center;
+}
 
 /* Helper Tools*/
 
 .height-center {
   margin-top: auto;
   margin-bottom: auto;
+  img {
+    width: 100px;
+    height: auto;
+  }
 }
 
 .right {
@@ -306,13 +331,12 @@ body {
   display: none !important;
 }
 
-
 #toggle-nav {
   visibility: visible;
-  float:right;
-  position:relative;
-  top:-40px;
-  right:20px;
+  float: right;
+  position: relative;
+  top: -40px;
+  right: 20px;
 
   /* margin-bottom:-30px; */
   /* padding:20px; */
@@ -375,24 +399,18 @@ body {
     text-align: center;
   }
 
-  /* .care-box h3:nth-child(odd) {
-    padding-top: 10px;
-    margin-bottom:0px;
+  .page-background-small {
+    background-color: var(--main-background-color);
   }
-  
-  
-  .care-box h3:nth-child(even) {
-    margin-top:0px;
+
+  .description:nth-child(odd) {
+    /* margin: 20px; */
+    padding-top: 20px;
   }
-  
-  
-  
-  .care-box p {
-    padding-top: 5px;
-    margin-bottom:0px;
-    margin-top:0px;
-  
-  } */
+
+  .description h3 {
+    margin-top: 0px;
+  }
 }
 
 /* Larger screens */
@@ -452,14 +470,14 @@ body {
 
   .image-text {
     position: relative;
-    top: -100px;
+    top: -50px;
     left: 10px;
     /* margin-bottom:-100px; */
   }
 
   .blog-text {
     position: relative;
-    right: -100px;
+    right: -70px;
     top: -70px;
     margin-bottom: -90px;
   }
@@ -479,5 +497,22 @@ body {
 
   #toggle-nav {
     visibility: hidden; /* or opacity: 0; */
+  }
+
+  .house-plants-information {
+    min-height: 900px;
+  }
+  .segment {
+    min-height: 300px;
+    min-width: 300px;
+  }
+
+  .segment p {
+    padding: 5px;
+  }
+
+  .description,
+  .idea-img {
+    margin: 20px;
   }
 }

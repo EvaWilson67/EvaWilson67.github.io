@@ -6,14 +6,18 @@
 //     // "You are feeling " + event.currentTarget.value;
 // }
 
-const element = document.getElementById("btn-submit");
-if (element) {
-  document.getElementById("btn-submit").onclick = () => {
-    document.getElementById("submission-response").innerHTML =
-      "Submission Sent!";
+/*Navigation*/
+const navigation = document.getElementById("toggle-nav");
+console.log(navigation);
+if (navigation) {
+  navigation.onclick = () => {
+    document.getElementById("nav-items").classList.toggle("hide");
   };
+} else {
+  console.log("Button not found!");
 }
 
+/*Gardening Stuff*/
 const garden = document.getElementById("hidden-2");
 if (garden) {
   document.getElementById("hidden-2").onmouseover = () => {
@@ -25,12 +29,12 @@ if (garden) {
   };
 }
 
-const navigation = document.getElementById("toggle-nav");
-console.log(navigation);
-if (navigation) {
-  navigation.onclick = () => {
-    document.getElementById("nav-items").classList.toggle("hide");
+
+/*Contact Page Submit information*/
+const element = document.getElementById("btn-submit");
+if (element) {
+  document.getElementById("btn-submit").onclick = () => {
+    document.getElementById("submission-response").innerHTML =
+      "Submission Sent!";
   };
-} else {
-  console.log("Button not found!");
 }
