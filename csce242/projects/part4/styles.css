@@ -2,15 +2,15 @@
 
 :root {
   --main-background-color: white;
-  --secondary-background-color:#DFE0DC;
+  --secondary-background-color: #dfe0dc;
 
   --header-footer-background-color: #283106;
-  --header-footer-color:white;
+  --header-footer-color: white;
 
-  --container-background-color:#B0B6BC;
-  --container-border-color:#777E5C;
+  --container-background-color: #b0b6bc;
+  --container-border-color: #777e5c;
 
-  --navigation-link-hover:#D1D8BD;
+  --navigation-link-hover: #d1d8bd;
 
   /* --main-background-color: white;
 
@@ -55,9 +55,9 @@ body {
   color: var(--header-footer-color);
 }
 
-.logo{
-  margin:10px;
-  padding-top:10px;
+.logo {
+  margin: 10px;
+  padding-top: 10px;
 }
 
 /* .footer-conter p {
@@ -75,7 +75,7 @@ body {
   padding-left: 24px;
   /* height: 36px; */
   text-align: center;
-  color:var(--header-footer-color);
+  color: var(--header-footer-color);
 }
 .main-footer p {
   margin: 0px;
@@ -131,7 +131,7 @@ body {
 
 .care-box {
   background: var(--main-background-color);
-  border:10px solid var(--container-background-color);
+  border: 10px solid var(--container-background-color);
   margin: 10px;
 }
 
@@ -140,8 +140,8 @@ textarea {
   height: 200px;
 }
 
-txt-information input{
-  width:100%;
+txt-information input {
+  width: 100%;
   /* width:100%;
   background-color:pink; */
 }
@@ -152,20 +152,18 @@ txt-information input{
   margin-bottom: -50px;
 }
 
-
 .node {
   margin: 10px;
   background-color: var(--secondary-background-color);
-  border:10px solid var(--container-border-color);
+  border: 10px solid var(--container-border-color);
   /* max-width:10%; */
   img {
     margin: 5px;
     width: 200px;
-    border:5px solid var(--container-border-color);
+    border: 5px solid var(--container-border-color);
   }
   padding: 10px;
 }
-
 
 .house-plants,
 .plant-fragments {
@@ -175,7 +173,6 @@ txt-information input{
 .house-plants-information {
   background-color: var(--secondary-background-color);
   border: 2px solid var(--container-border-color);
-
 }
 
 .segment {
@@ -207,7 +204,7 @@ txt-information input{
 .plant-fragments {
   img {
     width: 100%;
-    margin:5px solid var(--container-border-color);
+    margin: 5px solid var(--container-border-color);
   }
 }
 
@@ -222,25 +219,15 @@ txt-information input{
   border: 10px solid var(--container-border-color);
 }
 
-.unit {
-  margin: 5px;
-  background-color: var(--main-background-color);
-  border: 5px solid var(--container-border-color);
-}
+
 
 .gardening-col {
   margin: 20px;
 }
 
-.contact-text-box{
-  margin:10px;
-  
+.contact-text-box {
+  margin: 10px;
 }
-
-/* .contact-text-box text{
-  width:100%;
-  color:pink;
-} */
 
 .contact-text-box {
   flex: 1;
@@ -252,9 +239,8 @@ input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-  margin-top: 5px; 
+  margin-top: 5px;
 }
-
 
 /* Main Nagivation */
 #toggle-nav div {
@@ -335,7 +321,7 @@ input {
 
 .house-plants h3 {
   background-color: var(--secondary-background-color);
-  border:2px solid var(--container-border-color);
+  border: 2px solid var(--container-border-color);
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -348,16 +334,16 @@ input {
 
 #most-recent-pictures h3 {
   background: var(--main-background-color);
-  border:5px solid var(--container-border-color);
+  border: 5px solid var(--container-border-color);
   padding-left: 10px;
   width: 65%;
-  margin-bottom:-10px;
+  margin-bottom: -10px;
 }
 
 .page-content h1,
 .page-content h2,
 .page-content h3,
-.page-content p{
+.page-content p {
   text-align: center;
   color: var(--header-footer-background-color);
 }
@@ -486,6 +472,11 @@ input {
   .description h3 {
     margin-top: 0px;
   }
+  .unit-content {
+    margin: 5px;
+    background-color: var(--main-background-color);
+    border: 5px solid var(--container-border-color);
+  }
 }
 
 /* Larger screens */
@@ -519,8 +510,16 @@ input {
       max-width: 100%;
     }
   }
-  .unit {
+  /* .unit {
     width: 30%;
+  } */
+
+  .unit {
+    margin: 5px;
+    background-color: var(--main-background-color);
+    border: 5px solid var(--container-border-color);
+    width: 30%;
+
   }
 
   .blog,
