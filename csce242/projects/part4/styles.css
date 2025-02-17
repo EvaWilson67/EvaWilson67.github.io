@@ -161,6 +161,7 @@ txt-information input{
   img {
     margin: 5px;
     width: 200px;
+    border:5px solid var(--container-border-color);
   }
   padding: 10px;
 }
@@ -206,6 +207,7 @@ txt-information input{
 .plant-fragments {
   img {
     width: 100%;
+    margin:5px solid var(--container-border-color);
   }
 }
 
@@ -223,7 +225,7 @@ txt-information input{
 .unit {
   margin: 5px;
   background-color: var(--main-background-color);
-  border: 1px solid var(--container-border-color);
+  border: 5px solid var(--container-border-color);
 }
 
 .gardening-col {
@@ -258,7 +260,7 @@ input {
 #toggle-nav div {
   width: 25px;
   height: 2px;
-  background-color: var(--secondary-color);
+  background-color: var(--header-footer-color);
   margin: 6px 0 0 0;
 }
 
@@ -359,10 +361,6 @@ input {
   text-align: center;
   color: var(--header-footer-background-color);
 }
-/* 
-.gardening-col h3{
-
-} */
 
 /* Helper Tools*/
 
