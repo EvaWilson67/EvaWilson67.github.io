@@ -92,7 +92,11 @@ body {
   background-color: var(--secondary-background-color);
 }
 
-
+.blog-image {
+  /* display: inline-block; */
+  margin: 20px;
+  border: 10px solid var(--container-background-color);
+}
 
 .blog-image:nth-child(1n + 2) {
   border: 10px solid var(--container-border-color);
@@ -473,12 +477,6 @@ input {
     background-color: var(--main-background-color);
     border: 5px solid var(--container-border-color);
   }
-
-  .blog-image {
-    display: inline-block;
-    margin: auto;
-    border: 10px solid var(--container-background-color);
-  }
 }
 
 /* Larger screens */
@@ -586,11 +584,5 @@ input {
   .description,
   .idea-img {
     margin: 20px;
-  }
-
-  .blog-image {
-    /* display: inline-block; */
-    margin: 20px;
-    border: 10px solid var(--container-background-color);
   }
 }
