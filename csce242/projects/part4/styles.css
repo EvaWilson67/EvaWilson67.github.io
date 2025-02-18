@@ -11,19 +11,6 @@
   --container-border-color: #777e5c;
 
   --navigation-link-hover: #d1d8bd;
-
-  /* --main-background-color: white;
-
-  --secondary-background-color:#DFE0DC; */
-  /* --secondary-background-color: #B0B6BC; */
-  /* 
-
-  --border-color:#B0B6BC;
-
-
-  --secondary-color: white;
-  --third-color: red; */
-
   /* 
 #DFE0DC
 #D1D8BD
@@ -31,7 +18,6 @@
 #C7C2AB
 #B0B6BC
 #283106
-
 */
 }
 
@@ -121,15 +107,11 @@ body {
 
 #contact-section,
 #about-section {
-  /* max-width: 378px; */
-
   background: var(--secondary-background-color);
   margin: 50px;
   padding: 100px;
   padding: 20px;
-
   min-height: 130px;
-  /* min-height:330px; */
 }
 
 .care-box {
@@ -145,8 +127,6 @@ textarea {
 
 txt-information input {
   width: 100%;
-  /* width:100%;
-  background-color:pink; */
 }
 
 .title-container {
@@ -159,7 +139,6 @@ txt-information input {
   margin: 10px;
   background-color: var(--secondary-background-color);
   border: 10px solid var(--container-border-color);
-  /* max-width:10%; */
   img {
     margin: 5px;
     width: 200px;
@@ -254,7 +233,6 @@ input {
 #main-nav li {
   list-style-type: none;
   display: inline-block;
-  /* padding: 10px; */
 }
 
 #nav-items li {
@@ -346,7 +324,16 @@ input {
 .page-content p {
   text-align: center;
   color: var(--header-footer-background-color);
-  /* padding-bottom: 20px; */
+}
+
+.hidden-title h4 {
+  visibility: hidden;
+}
+
+.unhidden-title h4 {
+  visibility: visible;
+  background-color: var(--main-background-color);
+  border: 1px solid var(--border-color);
 }
 
 /* Helper Tools*/
@@ -382,16 +369,6 @@ input {
   margin-bottom: auto;
 }
 
-.hidden-title h4 {
-  visibility: hidden;
-  /* border: 1px solid transparent; */
-}
-
-.unhidden-title h4 {
-  visibility: visible;
-  background-color: var(--main-background-color);
-  border: 1px solid var(--border-color);
-}
 
 .hide {
   display: none !important;
@@ -409,7 +386,6 @@ input {
 /* Small Screens*/
 @media only screen and (max-width: 999px) {
   .hide-for-small {
-    /* visibility: hidden !important; */
     display: none !important;
   }
   .hide-for-large {
@@ -474,7 +450,6 @@ input {
   }
 
   .description:nth-child(odd) {
-    /* margin: 20px; */
     padding-top: 20px;
   }
 
@@ -486,12 +461,20 @@ input {
     background-color: var(--main-background-color);
     border: 5px solid var(--container-border-color);
   }
+
+
+  .plant-fragments img{
+    max-width: 60%;
+    max-height: 600px;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+  }
 }
 
 /* Larger screens */
 @media only screen and (min-width: 1000px) {
   .hide-for-small {
-    /* visibility: visible !important; */
     display: block !important;
   }
 
@@ -519,9 +502,6 @@ input {
       max-width: 100%;
     }
   }
-  /* .unit {
-    width: 30%;
-  } */
 
   .unit {
     margin: 5px;
