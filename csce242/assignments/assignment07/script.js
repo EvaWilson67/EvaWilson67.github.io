@@ -1,5 +1,6 @@
 document.getElementById("btn-stairs").onclick = () => {
   const displayLadder = document.getElementById("ladder");
+  const climb = document.getElementById("btn-climb");
   const displayPerson = document.getElementById("person");
 
   let counter = 0;
@@ -8,10 +9,11 @@ document.getElementById("btn-stairs").onclick = () => {
   for (let i = 0; i < 10; i++) {
     const div = document.createElement("div");
     displayLadder.append(div);
+    climb.classList.remove("hidden");
 
-    document.getElementById("btn-climb").onclick = () => {
+    climb.onclick = () => {
       displayPerson.classList.remove("hidden");
-     updatePos = setInterval(() => {
+      updatePos = setInterval(() => {
         if (pos < 785) {
           if (counter % 2 == 0) {
             counter++;
@@ -29,10 +31,9 @@ document.getElementById("btn-stairs").onclick = () => {
               .getElementById("person")
               .style.setProperty("bottom", pos + "px");
           }
-        }
-        else{
-            clearInterval(updatePos);
-            // console.log("cleared");
+        } else {
+          clearInterval(updatePos);
+          // console.log("cleared");
         }
       }, 300);
     };
