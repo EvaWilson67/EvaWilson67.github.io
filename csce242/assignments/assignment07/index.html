@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<!-- @author Eva Wilson -->
+
+<head>
+    <title>Assignment 07</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <header id="main-header">
+            <h1>Assignment 7</h1>
+            <h2> For Loops</h2>
+        </header>
+        <main id="page-content">
+            <section class="columns">
+                <div class="margin ladder-and-buttons">
+                    <p> <button id="btn-stairs">Draw Stairs</button> </p>
+                    <div id="ladder">
+                    </div>
+                    <p> <button id="btn-climb">Climb Stairs</button> </p>
+                </div>
+            </section>
+            <img id="person" class="margin hidden"> 
+        </main>
+        <footer id="main-footer">
+            <h4>&copy; EvaWilson</h4>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+
+    <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+        version="1.1">
+        <defs>
+            <filter id="round">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                    result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
+        </defs>
+    </svg>
+
+</body>
+
+</html>
