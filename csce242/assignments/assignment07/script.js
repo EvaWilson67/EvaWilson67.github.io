@@ -10,11 +10,12 @@ document.getElementById("btn-stairs").onclick = () => {
     const div = document.createElement("div");
     displayLadder.append(div);
     climb.classList.remove("hidden");
+    displayPerson.classList.remove("hidden");
+    displayPerson.src = "images/left.png";
 
     climb.onclick = () => {
-      displayPerson.classList.remove("hidden");
       updatePos = setInterval(() => {
-        if (pos < 785) {
+        if (pos < 750) {
           if (counter % 2 == 0) {
             counter++;
             pos += 5;
@@ -33,7 +34,7 @@ document.getElementById("btn-stairs").onclick = () => {
           }
         } else {
           clearInterval(updatePos);
-          // console.log("cleared");
+          console.log("cleared");
         }
       }, 300);
     };
