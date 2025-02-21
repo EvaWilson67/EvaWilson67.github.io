@@ -1,9 +1,7 @@
 window.onload = function () {
-  // your code here
-  // console.log("Page loaded");
-
-  // const toys = [];
-  // toys["ball"] = "An item to throw";
+  const section = document.getElementById("display-person-title");
+  const displayPerson = document.getElementById("popup-box");
+  const closeButton = document.getElementById("close");
 
   const persons = [];
   persons["Happy Birthday"] = "birthday";
@@ -12,11 +10,6 @@ window.onload = function () {
   persons["Quiet Time"] = "read";
   persons["Working Hard"] = "shovel";
   persons["Working from Home"] = "work";
-
-  const section = document.getElementById("display-person-title");
-  const displayPerson = document.getElementById("popup-box");
-
-  const closeButton = document.getElementById("close");
 
   for (let person in persons) {
     const p = document.createElement("p");
