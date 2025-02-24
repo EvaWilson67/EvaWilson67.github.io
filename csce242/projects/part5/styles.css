@@ -247,6 +247,9 @@ input {
 .links ul {
   padding-left: 0px;
 }
+#main-nav ul{
+  margin:20px;
+}
 
 #nav-items {
   padding-left: 0;
@@ -275,6 +278,7 @@ input {
 }
 
 #main-nav li + li::before {
+  margin:10px;
   content: " | ";
   color: var(--secondary-background-color);
 }
