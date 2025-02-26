@@ -206,13 +206,11 @@ txt-information input {
 }
 
 .contact-text-box {
-  margin: 10px;
-}
-
-.contact-text-box {
   flex: 1;
   display: flex;
   flex-direction: column;
+  margin: 10px;
+  color:var(--header-footer-background-color);
 }
 
 input {
