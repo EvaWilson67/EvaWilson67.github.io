@@ -46,20 +46,15 @@ body {
   padding-top: 10px;
 }
 
-/* .footer-conter p {
-  color: white;
-} */
 .main-footer {
   display: block;
   position: absolute;
   left: 0;
   right: 0;
-  /* bottom:0; */
   background-color: var(--header-footer-background-color);
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 24px;
-  /* height: 36px; */
   text-align: center;
   color: var(--header-footer-color);
 }
@@ -87,7 +82,7 @@ body {
   border: 10px solid var(--container-border-color);
 }
 
-.blog p{
+.blog p {
   padding-bottom: 20px;
 }
 
@@ -114,12 +109,6 @@ body {
   min-height: 130px;
 }
 
-.care-box {
-  background: var(--main-background-color);
-  border: 10px solid var(--container-background-color);
-  margin: 10px;
-}
-
 textarea {
   width: 100%;
   height: 200px;
@@ -128,6 +117,17 @@ textarea {
 txt-information input {
   width: 100%;
 }
+
+
+.care-box {
+  background: var(--main-background-color);
+  border: 10px solid var(--container-background-color);
+  margin: 10px;
+  img{
+    border:5px solid var(--container-background-color);
+  }
+}
+
 
 .title-container {
   position: relative;
@@ -210,7 +210,7 @@ txt-information input {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  color:var(--header-footer-background-color);
+  color: var(--header-footer-background-color);
 }
 
 input {
@@ -218,6 +218,12 @@ input {
   padding: 10px;
   box-sizing: border-box;
   margin-top: 5px;
+}
+
+.unit{
+  img{
+    border: 5px solid var(--container-border-color);
+  }
 }
 
 /* Main Nagivation */
@@ -245,8 +251,8 @@ input {
 .links ul {
   padding-left: 0px;
 }
-#main-nav ul{
-  margin:20px;
+#main-nav ul {
+  margin: 20px;
 }
 
 #nav-items {
@@ -276,7 +282,7 @@ input {
 }
 
 #main-nav li + li::before {
-  margin:10px;
+  margin: 10px;
   content: " | ";
   color: var(--secondary-background-color);
 }
@@ -371,7 +377,6 @@ input {
   margin-bottom: auto;
 }
 
-
 .hide {
   display: none !important;
 }
@@ -462,10 +467,10 @@ input {
     margin: 5px;
     background-color: var(--main-background-color);
     border: 5px solid var(--container-border-color);
+    
   }
 
-
-  .plant-fragments img{
+  .plant-fragments img {
     max-width: 60%;
     max-height: 600px;
     margin-left: auto;
