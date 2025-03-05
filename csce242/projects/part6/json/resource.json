@@ -1,0 +1,74 @@
+[
+    {
+        "id":1,
+        "name":"houseplantjournal",
+        "image": "houseplantjournal.png",
+        "summary": "Another plant blog that answers personal questions regarding plant health.",
+        "url": "https://www.houseplantjournal.com/blog/",
+        "type": "website"
+    },
+    {
+        "id":2,
+        "name":"janeperrone",
+        "image": "janeperrone.png",
+        "summary": "A great plant blog that has it's own podcast.",
+        "url": "https://www.janeperrone.com/",
+        "type": "website"
+    },
+    {
+        "id":3,
+        "name":"thehouseplantguru",
+        "image": "thehouseplantguru.png",
+        "summary": "I love the design and layout of this website. It also has great information!",
+        "url": "https://thehouseplantguru.com/",
+        "type": "website"
+    },
+    {
+        "id":4,
+        "name":"How Not to Kill Your Houseplant",
+        "image": "howtonotkillyourhouseplant.png",
+        "summary": "Great for beginners, it has all sorts of information on how to find the perfect plant for you, to tell tale signs of plant care.",
+        "url": "https://www.booksamillion.com/p/How-Not-Kill-Your-Houseplant/Veronica-Peerless/9780744087888?gStoreCode=578&gQT=1",
+        "type": "book"
+    },
+    {
+        "id":5,
+        "name":"The New Plant Parent",
+        "image": "newplantparent.png",
+        "summary": "Teaches the art of understanding a plant’s needs and giving it a home with the right balance of light, water, and nutrients.",
+        "url": "https://www.barnesandnoble.com/w/the-new-plant-parent-darryl-cheng/1129279379?ean=9781419732393&gStoreCode=3462&gQT=1",
+        "type": "book"
+    },
+    {
+        "id":6,
+        "name":"The Garden Plant Encyclopedia",
+        "image": "gardenplantsencyclopedia.png",
+        "summary": "Says what the title is! All about gardens.",
+        "url": "https://www.thriftbooks.com/w/the-garden-plant-encyclopedia/7846753/item/15319541/?gQT=1#idiq=15319541&edition=5385592",
+        "type": "book"
+    },
+    {
+        "id":7,
+        "name":"The First Book of Plants",
+        "image": "firstbookofplants.png",
+        "summary": "The First Book of Plants by Alice Dickinson is a wonderful science book that targets upper elementary/middle school readers.",
+        "url": "https://www.barnesandnoble.com/w/the-first-book-of-plants-alice-dickinson/1103222874?ean=9780692874882&gQT=1",
+        "type": "book"
+    },
+    {
+        "id":8,
+        "name":"The Secret World of Plants",
+        "image": "secretworldofplants.png",
+        "summary": "Children can discover the secrets of more than 100 amazing plants in this treasury of fascinating flora, as well as the essentials of plant science, including photosynthesis, pollination, and germination.",
+        "url": "https://www.barnesandnoble.com/w/the-secret-world-of-plants-ben-hoare/1141391324?ean=9780744059830&gStoreCode=3462&gQT=1",
+        "type": "book"
+    },
+    {
+        "id":9,
+        "name":"Plantopedia",
+        "image": "plantopedia.png",
+        "summary": "Houseplants have the power to transform any room. With their lush foliage and structural beauty, they help create indoor oases that bring a sense of tranquility to our busy lives. ",
+        "url": "https://www.barnesandnoble.com/w/plantopedia-lauren-camilleri/1137000608?ean=9781925811773&gStoreCode=3462&gQT=1",
+        "type": "book"
+    }
+]
