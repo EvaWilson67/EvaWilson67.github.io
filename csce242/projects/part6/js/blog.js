@@ -14,31 +14,34 @@ const showBlogs = async () => {
   const blogSection = document.getElementById("blog");
   console.log("hi");
   
-  blogs.forEach((blog) => {
-    console.log(blog);
-  });
 //   blogs.forEach((blog) => {
-//     const section = document.getElementById("section");
-//     section.classList = "blog center";
-//     blogSection.append(section);
+//     console.log(blog);
+//   });
+  blogs.forEach((blog) => {
+    const section = document.createElement("section");
+    section.classList = "blog center";
+    blogSection.append(section);
 
-//     const div = document.getElementById("div");
-//     div.classList = "columns";
-//     section.append(div);
+    const div = document.createElement("div");
+    div.classList = "columns";
+    section.append(div);
 
-//     const img = document.createElement("img");
-//     img.src = `images/blog_images/${blog.image}`;
-//     div.append(img);
+    const img = document.createElement("img");
+    img.src = `images/blog_images/${blog.image}`;
+    div.append(img);
 
-//     const h3 = document.createElement("h3");
-//     h3.innerHTML = blog.name;
-//     h3.classList = "height-center";
-//     div.append(h3);
+    const divDate = document.createElement("div");
+    divDate.classList = "height-center";
+    div.append(divDate);
 
-//     const p = document.createElement("p");
-//     p.innerHTML = blog.summary;
-//     section.append(p);
-//   })
+    const h3 = document.createElement("h3");
+    h3.innerHTML = blog.date;
+    divDate.append(h3);
+
+    const p = document.createElement("p");
+    p.innerHTML = blog.summary;
+    section.append(p);
+  })
   ;
 };
 
