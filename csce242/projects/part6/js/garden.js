@@ -33,15 +33,50 @@ const showPlants = async () => {
   plants.forEach((plant) => {
     const a = document.createElement("a");
     a.href = plant.link;
+    a.classList = "links";
 
-    if(plant.type.tolowercase()=="vegetable"){
+    const divContainer = document.createElement("div");
+    divContainer.classList = "hidden-title node";
+    a.append(divContainer);
+
+    const img = document.createElement("img");
+    img.src = `images/garden_images/${plant.image}`;
+    divContainer.append(img);
+
+    const div = document.createElement("div");
+    div.classList="title-container";
+    divContainer.append(div);
+
+    const name = document.createElement("h3");
+    name.innerHTML = plant.name;
+    div.append(name);
+
+    if(plant.type.toLowerCase()=="vegetable"){
       vegetablesSection.append(a);
+
     }
-    else if(plant.type.tolowercase()=="fruit"){
+    else if(plant.type.toLowerCase()=="fruit"){
       fruitsSection.append(a);
     }
-    else if(plant.type.tolowercase()=="herb"){
+    else if(plant.type.toLowerCase()=="herb"){
       herbsSection.append(a);
     }
+    else if(plant.type.toLowerCase()=="flower"){
+      flowersSection.append(a);
+
+    }
+
+    a.addEventListener('mouseover', () => {
+      //document.getElementById("hidden-2").classList.add("unhidden-title");
+      div.classList.add('unhidden-title');
+    });
+  
+    a.addEventListener('mouseout', () => {
+      // element.classList.remove('hover-effect-js');
+      div.classList.remove('unhidden-title');
+
+    });
   });
 };
+
+showPlants();
