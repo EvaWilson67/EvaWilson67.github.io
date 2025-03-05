@@ -15,13 +15,46 @@ const showPlants = async () => {
   const plants = await getPlants();
   const housePlants = document.getElementById("house-plants");
 
-  const easySection = document.createElement("section");
-  const mediumSection = document.createElement("section");
-  const hardSection = document.createElement("section");
+//   const easySection = document.createElement("section");
+//   const mediumSection = document.createElement("section");
+//   const hardSection = document.createElement("section");
 
   plants.forEach((plant) => {
     if(plant.section=="easy"){
-        console.log("hi");
+        // console.log("hi");
+        //easy
+
+        const easySection = document.getElementById("easy-section");
+
+        const a = document.createElement("a");
+        a.href = plant.link;
+        easySection.append(a);
+
+        const section = document.createElement("section");
+        section.classList="segment columns center";
+        a.append(section);
+
+        const divImage = document.createElement("div");
+        divImage.classList.add("height-center");
+        section.append(divImage);
+
+        const img = document.createElement("img");
+        img.src=`images/house_images + ${plant.image}`;
+        divImage.append(img);
+
+        const divInfo = document.createElement("div");
+        section.append(divInfo);
+
+
+        const name = document.createElement("h3");
+        name.innerHTML=plant.name;
+        divInfo.append(name);
+
+        const summary = document.createElement("p");
+        summary.innerHTML=plant.summary;
+        divInfo.append(summary);
+
+
     }
 
 
