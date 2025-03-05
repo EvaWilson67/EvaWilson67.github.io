@@ -16,6 +16,7 @@ const showPlants = async () => {
   const easySection = document.getElementById("easy-section");
   const mediumSection = document.getElementById("medium-section");
   const hardSection = document.getElementById("hard-section");
+  
 
   plants.forEach((plant) => {
     if (plant.section.toLowerCase() == "easy") {
