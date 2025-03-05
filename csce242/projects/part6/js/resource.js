@@ -20,7 +20,7 @@ const showResources = async () => {
     console.log("9");
 
     const a = document.createElement("a");
-    a.href = resource.link;
+    a.href = resource.url;
     a.classList = "unit center links";
     resouceSection.append(a);
 
