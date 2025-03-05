@@ -15,10 +15,7 @@ const showResources = async () => {
   const resources = await getResources();
   const resouceSection = document.getElementById("resouce-columns");
 
-  console.log("1");
   resources.forEach((resource) => {
-    console.log("9");
-
     const a = document.createElement("a");
     a.href = resource.url;
     a.classList = "unit center links";
