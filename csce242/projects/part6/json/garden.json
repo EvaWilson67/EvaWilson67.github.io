@@ -1,0 +1,87 @@
+[
+    {
+        "id":1,
+        "image": "squash.jpg",
+        "name": "Kabocha",
+        "type":"Vegetables",
+        "link":"Kabocha.html"
+    },
+    {
+        "id":2,
+        "image": "eggplant.jpg",
+        "name": "Eggplant",
+        "type":"Vegetables",
+        "link":"eggplant.html"
+    },
+    {
+        "id":3,
+        "image": "corn.jpg",
+        "name": "Corn",
+        "type":"Vegetables",
+        "link":"corn.html"
+
+    },
+    {
+        "id":4,
+        "image": "peaches.jpg",
+        "name": "Peaches",
+        "type":"Fruits",
+        "link":"peaches.html"
+    },
+    {
+        "id":5,
+        "image": "blackberry.jpg",
+        "name": "Blackberry",
+        "type":"Fruits",
+        "link":"blackberry.html"
+    },
+    {
+        "id":6,
+        "image": "blueberries.jpg",
+        "name": "Blueberries",
+        "type":"Fruits",
+        "link":"blueberries.html"
+    },
+    {
+        "id":7,
+        "image": "dill.jpg",
+        "name": "Dill",
+        "type":"Herbs",
+        "link":"dill.html"
+    },
+    {
+        "id":8,
+        "image": "basil.jpg",
+        "name": "Basil",
+        "type":"Herbs",
+        "link":"basil.html"
+    },
+    {
+        "id":9,
+        "image": "mint.jpg",
+        "name": "Mint",
+        "type":"Herbs",
+        "link":"mint.html"
+    },
+    {
+        "id":10,
+        "image": "sunflower.jpg",
+        "name": "Sunflower",
+        "type":"Flowers",
+        "link":"sunflower.html"
+    },
+    {
+        "id":11,
+        "image": "carnation.jpg",
+        "name": "Carnation",
+        "type":"Flowers",
+        "link":"carnation.html"
+    },
+    {
+        "id":11,
+        "image": "lavendar.jpg",
+        "name": "Lavendar",
+        "type":"Flowers",
+        "link":"lavendar.html"
+    }
+]
