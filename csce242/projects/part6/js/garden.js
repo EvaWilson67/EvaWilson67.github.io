@@ -35,19 +35,19 @@ const showPlants = async () => {
     a.href = plant.link;
     a.classList = "links";
 
-    const divContainer = document.createElement("div");
-    divContainer.classList = "hidden-title node";
-    a.append(divContainer);
+    const section = document.createElement("section");
+    section.classList = "node";
+    a.append(section);
 
     const img = document.createElement("img");
     img.src = `images/garden_images/${plant.image}`;
-    divContainer.append(img);
+    section.append(img);
 
     const div = document.createElement("div");
-    div.classList="title-container";
-    divContainer.append(div);
+    div.classList="hidden-title title-container";
+    section.append(div);
 
-    const name = document.createElement("h3");
+    const name = document.createElement("h4");
     name.innerHTML = plant.name;
     div.append(name);
 
@@ -68,12 +68,17 @@ const showPlants = async () => {
 
     a.addEventListener('mouseover', () => {
       //document.getElementById("hidden-2").classList.add("unhidden-title");
-      div.classList.add('unhidden-title');
+      div.classList.add("unhidden-title");
+      div.classList.remove("hidden-title");
+
     });
   
     a.addEventListener('mouseout', () => {
       // element.classList.remove('hover-effect-js');
-      div.classList.remove('unhidden-title');
+      div.classList.remove("unhidden-title");
+      div.classList.add("hidden-title");
+
+      
 
     });
   });
