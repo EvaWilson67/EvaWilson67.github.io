@@ -57,15 +57,11 @@ const showPlants = async () => {
     a.addEventListener('mouseover', () => {
       div.classList.add("unhidden-title");
       div.classList.remove("hidden-title");
-
     });
   
     a.addEventListener('mouseout', () => {
       div.classList.remove("unhidden-title");
       div.classList.add("hidden-title");
-
-      
-
     });
   });
 };

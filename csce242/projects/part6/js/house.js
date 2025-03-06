@@ -17,7 +17,6 @@ const showPlants = async () => {
   const mediumSection = document.getElementById("medium-section");
   const hardSection = document.getElementById("hard-section");
   
-
   plants.forEach((plant) => {
     const a = document.createElement("a");
       a.href = plant.link;
