@@ -14,9 +14,6 @@ const showBlogs = async () => {
   const blogSection = document.getElementById("blog");
   console.log("hi");
   
-//   blogs.forEach((blog) => {
-//     console.log(blog);
-//   });
   blogs.forEach((blog) => {
     const section = document.createElement("section");
     section.classList = "blog center";

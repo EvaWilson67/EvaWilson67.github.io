@@ -1,16 +1,4 @@
-/*Gardening Stuff*/
-// const garden = document.getElementById("hidden-2");
-// if (garden) {
-//   document.getElementById("hidden-2").onmouseover = () => {
-//     document.getElementById("hidden-2").classList.add("unhidden-title");
-//   };
-
-//   document.getElementById("hidden-2").onmouseleave = () => {
-//     document.getElementById("hidden-2").classList.remove("unhidden-title");
-//   };
-// }
-
-// /https://evawilson67.github.io/csce242/projects/part6/json/garden.json
+//https://evawilson67.github.io/csce242/projects/part6/json/garden.json
 
 const getPlants = async () => {
   const url =
@@ -67,14 +55,12 @@ const showPlants = async () => {
     }
 
     a.addEventListener('mouseover', () => {
-      //document.getElementById("hidden-2").classList.add("unhidden-title");
       div.classList.add("unhidden-title");
       div.classList.remove("hidden-title");
 
     });
   
     a.addEventListener('mouseout', () => {
-      // element.classList.remove('hover-effect-js');
       div.classList.remove("unhidden-title");
       div.classList.add("hidden-title");
 
