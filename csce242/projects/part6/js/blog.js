@@ -11,9 +11,7 @@ const getBlogs = async () => {
 
 const showBlogs = async () => {
   const blogs = await getBlogs();
-  const blogSection = document.getElementById("blog");
-  console.log("hi");
-  
+  const blogSection = document.getElementById("blog");  
   blogs.forEach((blog) => {
     const section = document.createElement("section");
     section.classList = "blog center";
