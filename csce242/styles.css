@@ -56,11 +56,23 @@ footer {
 
 
 /*anchor tag */
-.row a {
+.row a, .server {
   color: white;
   text-decoration: transparent; /* remove underline */
   border: 2px solid transparent; /* prevents borders from moving the page*/
 }
+
+
+/*Links*/
+.links{
+  margin:10px;
+  list-style-type: none;
+}
+
+.links a{
+  text-decoration: underline !important;
+}
+
 
 /* Typography*/
 header h1 {
