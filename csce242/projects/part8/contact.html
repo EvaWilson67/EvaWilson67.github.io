@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>VerdantVibe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="content">
+        <header id="main-header" class="columns center gallery">
+            <div id="main-nav" class=" columns three center">
+                <ul class="hide-for-small">
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="house_plants.html"> House Plants </a></li>
+                    <li><a href="gardening.html"> Gardening </a></li>
+                </ul>
+                <img class="logo" src="images/freelogo.jpg">
+                <ul class="hide-for-small">
+                    <li><a href="care.html"> Care </a></li>
+                    <li><a href="resources.html"> Resources </a></li>
+                    <li><a href="contact.html"> Contact </a></li>
+                </ul>
+            </div>
+            <div id="toggle-nav">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-items" class="gallery hide">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="house_plants.html"> House Plants </a></li>
+                <li><a href="gardening.html"> Gardening </a></li>
+                <li><a href="care.html"> Care </a></li>
+                <li><a href="resources.html"> Resources </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+        </header>
+
+        <main class="page-content">
+            <h1 class="center margin"> Contact Us!</h1>
+
+            <h4 class="center margin">A Cool Video on Plants!</h4>
+            <iframe id="contact-video" src="https://www.youtube.com/embed/muq9t4GpuxM?si=ROrnrZVEqp5_6jrF"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+            <div id="about-section">
+                <section>
+                    <h2>About Us</h2>
+                </section>
+                <div>
+                    <p>I am not good at keeping house plants or gardening. However, it is something that I am working
+                        towards. I don't have a lot of hobbies because my focus has always been my academic studies. I
+                        got into plant keeping because of my grandmother and I would like to keep the legacy going. It's
+                        okay to do hobbies your not good at (two of my plants are activley struggling because they are
+                        brats), so this project is a great way to represent that although you may not be good at
+                        something, the struggle in that hobby can be something to look forward to.</p>
+                </div>
+            </div>
+
+            <div id="contact-section" class="center">
+                <section>
+                    <h2>Contact Us</h2>
+                </section>
+
+                <!-- https://web3forms.com/ -->
+                <form method="POST" id="form">
+
+                    <input type="hidden" name="access_key" value="01d01a06-6e66-4f6b-8522-2e9693b1dbeb">
+                    <div id="txt-information" class="columns">
+                        <div class="contact-text-box">
+                            <label for="txt-name">Enter Name:</label> <br>
+                            <input type="text" id="txt-name" name="name" required>
+                        </div>
+
+                        <div class="contact-text-box">
+                            <label for="txt-email">Enter Email:</label> <br>
+                            <input type="email" id="txt-email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="bottom-text">
+                        <div class="contact-text-box">
+                            <label for="txt-box">How can we help?</label> <br>
+                            <textarea id="txt-box" name="message" required></textarea>
+                        </div>
+
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <div class="two gallery">
+                            <div class="float-right">
+                                <button type="submit" class="button" id="btn-submit">Submit</button>
+                            </div>
+                            <div id="result"></div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </main>
+        <footer class="main-footer">
+            <div class="footer-content">
+                <h2>Latest on Social Media</h2>
+                <div class="columns gallery">
+                    <img src="images/contact_images/mrfluffypants.jpg">
+                    <img src="images/contact_images/murdermittens.jpg">
+                    <img src="images/contact_images/ozzy.jpg">
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+    <script src="js\script.js"></script>
+    <script src="js\contact.js"></script>
+
+</body>
+
+</html>
